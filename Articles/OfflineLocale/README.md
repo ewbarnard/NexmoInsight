@@ -42,9 +42,9 @@ This PHP project uses composer to manage its dependencies (packages). You will n
 
 ## Database Tables ##
 
-Create two tables for our demo application. See the next listing.
+Create two tables for our demo application. See Listing 1.
 
-	~~~~sql
+~~~~sql
 	SET NAMES utf8mb4;
 	SET FOREIGN_KEY_CHECKS = 0;
 
@@ -69,5 +69,5 @@ Create two tables for our demo application. See the next listing.
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 	SET FOREIGN_KEY_CHECKS = 1;
-	~~~~
+~~~~
 
