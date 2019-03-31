@@ -4,8 +4,8 @@ namespace App\Controller;
 
 use App\Model\Entity\Contact;
 use Cake\Datasource\ResultSetInterface;
-use Cake\ORM\TableRegistry;
-use Nexmo\Client;
+use PhpAmqpLib\Connection\AMQPStreamConnection;
+use PhpAmqpLib\Message\AMQPMessage;
 
 /**
  * Contacts Controller
@@ -62,14 +62,15 @@ class ContactsController extends AppController {
     }
 
     private function nexmoFormatNumber(int $contactId, string $number): void {
-        $client = new Client(new Client\Credentials\Basic(NEXMO_KEY, NEXMO_SECRET));
-        $insight = $client->insights()->basic($number)->jsonSerialize();
-        $insight['contact_id'] = $contactId;
-        $insight['intl_format_number'] = $insight['international_format_number'];
-        $insight['natl_format_number'] = $insight['national_format_number'];
-        $formattings = TableRegistry::getTableLocator()->get('Formattings');
-        $entity = $formattings->newEntity($insight, ['associated' => []]);
-        $formattings->save($entity);
+        $url = parse_url(CLOUDAMQP_URL);
+        $vhost = substr($url['path'], 1);
+        $connection = new AMQPStreamConnection($url['host'], 5672, $url['user'], $url['pass'], $vhost);
+        $channel = $connection->channel();
+        $channel->exchange_declare(CLOUDAMQP_EXCHANGE, 'direct', false, true, false);
+
+        $body = json_encode(['contactId' => $contactId, 'number' => $number]);
+        $message = new AMQPMessage($body);
+        $channel->basic_publish($message, CLOUDAMQP_EXCHANGE);
     }
 
     /**
