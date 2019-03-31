@@ -206,9 +206,9 @@ Now we have two locale-formatting records, one showing Thailand and one showing 
 
 ## Moving Offline ##
 
-Now that we have our Nexmo Number Insight API working as expected, it's time to learn a pattern for moving work offline. This pattern is generally known at the Producer/Consumer Programming pattern.
+Now that we have our Nexmo Number Insight API working as expected, it's time to learn a pattern for moving work offline. This pattern is the Producer/Consumer Programming pattern.
 
-Inside the `ContactsController`, where `nexmoFormatNumber($contactId, $number)` calls the Nexmo API, we'll make a change. We'll package the input parameters (`$contactId` and `$number`) into a RabbitMQ message and send that message to our RabbitMQ exchange. This is a "fire and forget it" operation. We don't expect any sort of response, and we therefore don't await a response.
+Inside `ContactsController`, where `nexmoFormatNumber($contactId, $number)` calls the Nexmo API, we'll make a change. We'll package the input parameters (`$contactId` and `$number`) into a RabbitMQ message and send that message to our RabbitMQ exchange. This is a "fire and forget it" operation. We don't expect any sort of response, and we therefore don't await a response.
 
 [CloudAMQP](https://www.cloudamqp.com/) provides RabbitMQ as a service. They have a free service tier designed for development projects just like this. We'll sign up and use their free service. There are many other RabbitMQ options available, including installing it yourself. It's open source software. We'll be taking advantage of their tutorials as well. Both the RabbitMQ and Nexmo APIs support several different languages. We're using PHP here but you could choose from other languages.
 
