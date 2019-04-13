@@ -1,8 +1,16 @@
-# Proposal/Project One
+# First Proposal
 
 ## Tutorial Title
 
-Preparing to Scale: How to Offload Your Nexmo Number Insights in PHP
+_Preparing to Scale: How to Offload Your Nexmo Number Insights in PHP_
+
+## Tutorial Abstract
+
+> Typos happen. In this tutorial we validate user-entered phone numbers using the Nexmo
+> Number Insights API from our PHP web application. Once that's in place, we'll use CloudAMQP's
+> RabbitMQ as a Service to move our requests offline. We'll learn this powerful technique for
+> scaling-out a web application. We'll see how Conway's Law informs our decisions as we separate
+> user-facing web functionality from offline API use.
 
 ## About the App
 
@@ -67,8 +75,9 @@ The Nexmo Number Insights API (each of the three levels).
 
 The following tweets should include an image; perhaps even just a screen shot of the code.
 
-1. Learn a powerful technique for scaling-out your PHP application using @CloudAMQP's RabbitMQ as a Service and the @Nexmo Number Insights API. Producer/Consumer Programming for the win!
+1. Typos happen. Validate user-entered phone numbers with the @Nexmo Number Insights API. This PHP tutorial shows you how, step by step.
 
-2. Conway's Law helps us keep a separation of concerns. In this tutorial we'll see Conway's Law in action as we learn how to use a @Nexmo API asynchronously, separating it from the main web site.
+2. Learn a powerful technique for scaling-out your PHP application using @CloudAMQP's RabbitMQ as a Service and the @Nexmo Number Insights API. Producer/Consumer Programming for the win!
 
-3. Typos happen. Validate user-entered phone numbers with the @Nexmo Number Insights API. This PHP tutorial shows you how, step by step.
+3. Conway's Law helps us keep a separation of concerns. In this tutorial we'll see Conway's Law in action as we learn how to use a @Nexmo API asynchronously, separating it from the main web site.
+
