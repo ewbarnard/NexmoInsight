@@ -14,7 +14,7 @@ _Preparing to Scale: How to Offload Your Nexmo Number Insights in PHP_
 
 ## About the App
 
-The app is a simple PHP/MySQL website allowing us to create "user" records including a phone number.
+The app is a small PHP/MySQL website allowing us to create user records that include a phone number.
 We use the Nexmo Insights API to format and validate the supplied phone number. During the tutorial
 we separate the Nexmo requests/responses from the website to run offline. We use the Producer/Consumer
 programming pattern, passing messages via RabbitMQ.
@@ -26,16 +26,17 @@ Software developers with
  - Intermediate or advanced knowledge of PHP
  - Basic knowledge of MySQL and MySQL table design
  
-Basic familiarity with the CakePHP framework is helpful but not required.
+Familiarity with the CakePHP framework is helpful but not required.
 
 ## Learning Objectives
 
 Readers of the tutorial can learn:
 
  - How to use the Nexmo Number Insights API in PHP
- - That the Nexmo Number Insights API has three levels (basic, standard, advanced)
+ - That the Nexmo Number Insights API has three levels (basic, standard, advanced) 
+   and what the differences are
  - The Producer/Consumer programming pattern 
- - That typical PHP-centric Producer/Consumer use cases deal with traffic increases (or spikes)
+ - That typical PHP-centric Producer/Consumer use cases deal with web traffic increases (or spikes)
    and related database congestion
  - This example of creating a new PHP-based microservice
  

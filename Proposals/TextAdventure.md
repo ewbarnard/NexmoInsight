@@ -19,7 +19,12 @@ The original "Swiss Adventure" (1986) was written for the Cray mainframe operato
 console. This port uses a PHP application as the game engine and the user's smart
 phone text messaging app as the operator console. Commands and responses are by
 text message. The accompanying web page displays the Nexmo API requests and responses
-in real time
+in real time using JQuery AJAX requests.
+
+We demonstrate two-factor authentication by entering the phone number in a web page
+and following the Nexmo Verify API workflow. We mask (redact) the verification token
+when displaying the API requests/responses. The verified phone number will then be
+used as the adventure game's operator console.
 
 ## Target Audience
 
@@ -27,6 +32,7 @@ Software developers with
 
  - Intermediate knowledge of PHP
  - Basic knowledge of MySQL and MySQL table design
+ - Basic knowledge of using Javascript with JQuery for AJAX requests
  
 Basic familiarity with the CakePHP framework is helpful but not required.
 
@@ -43,22 +49,19 @@ Readers of the tutorial can learn:
  
 ## Language and Framework
 
-PHP 7.2 and CakePHP 3 using MySQL 5.6.
+PHP 7.2 and CakePHP 3 using MySQL 5.6. Javascript and JQuery (versions unknown)
+for displaying the API requests/responses in near-real time.
 
 ## Specific Nexmo/TokBox APIs
 
  - Nexmo SMS (send SMS; delivery receipt; inbound SMS)
+ - Nexmo Verify
 
 ## Related Reading
 
- - [Nexmo SMS API Reference](https://developer.nexmo.com/api/sms)
- - [Nexmo Verify API Reference](https://developer.nexmo.com/verify/overview)
  - [cURL, HTTPS & the Nexmo SMS API Behind the Scenes](https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr/)
- - [Receiving SMS Delivery Receipts with PHP](https://www.nexmo.com/blog/2018/06/25/receiving-sms-delivery-receipts-with-php-dr/)
  - [Connect your local development server to the Nexmo API using an ngrok tunnel](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr/)
- - [Receiving an SMS with PHP](https://www.nexmo.com/blog/2018/06/19/receiving-an-sms-with-php-dr/)
  - [Two-way SMS for customer engagement](https://developer.nexmo.com/tutorials/two-way-sms-for-customer-engagement)
- - [Sending SMS Messages with PHP](https://www.nexmo.com/blog/2017/09/20/sending-sms-messages-with-php-dr/)
  - [How to Show SMS Notifications in the Browser with Angular, Node.JS, and Ably](https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr/)
  - [Create Your Own Adventure](https://github.com/nexmo-community/create-your-own-adventure)
  - [Swiss Adventure](https://github.com/ewbarnard/InsidePHP/blob/master/APML/swiss.txt) - the original
@@ -81,7 +84,7 @@ PHP 7.2 and CakePHP 3 using MySQL 5.6.
 
 The following tweets should include an image; perhaps even just a screen shot of the code.
 
-1. Retro Computing: Learn the @Nexmo SMS API by playing a 1986 text Adventure game that takes you around Switzerland!
+1. Retro Computing: Learn the @Nexmo SMS API by playing the 1986 text Adventure game that takes you around Switzerland!
 
 2. "You have found the highest rail station in Europe. The Jungfrau, Eiger, and Monch display their deadly beauty." - learn how @Nexmo APIs work while you play the 1986 Adventure game using text messages to simulate your mainframe operator console.
 
