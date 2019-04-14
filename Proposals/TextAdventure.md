@@ -1,5 +1,7 @@
 # Second Proposal
 
+One serious, one fun.
+
 ## Tutorial Title
 
 _Learn the Nexmo SMS APIs by Playing the 1986 Swiss Text Adventure Game_
@@ -60,6 +62,8 @@ for displaying the API requests/responses in near-real time.
 ## Related Reading
 
  - [cURL, HTTPS & the Nexmo SMS API Behind the Scenes](https://www.nexmo.com/blog/2018/11/06/curl-https-nexmo-sms-api-behind-the-scenes-dr/)
+ - [Verify API Overview](https://developer.nexmo.com/verify/overview)
+ - [SMS API Overview](https://developer.nexmo.com/messaging/sms/overview)
  - [Connect your local development server to the Nexmo API using an ngrok tunnel](https://www.nexmo.com/blog/2017/07/04/local-development-nexmo-ngrok-tunnel-dr/)
  - [Two-way SMS for customer engagement](https://developer.nexmo.com/tutorials/two-way-sms-for-customer-engagement)
  - [How to Show SMS Notifications in the Browser with Angular, Node.JS, and Ably](https://www.nexmo.com/blog/2018/08/07/sms-notifications-browser-with-angular-node-ably-dr/)
