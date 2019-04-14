@@ -1,6 +1,6 @@
 # Second Proposal
 
-One serious, one fun.
+First serious, second fun. Titles are as appropriate for the Nexmo Developer blog.
 
 ## Tutorial Title
 
