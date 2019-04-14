@@ -99,7 +99,7 @@ The following tweets should include an image; perhaps even just a screen shot of
 I do long-form essays on Twitter, such as this 234-tweet epic: 
 [Big Iron and the World War II Codebreakers](https://twitter.com/ewbarnard/status/1036992847940149249).
 
-A 15-tweet thread might run as follows. (Numbering is correct in raw markdown, may render as 1. each time here.)
+A 15-tweet thread might run as follows.
 
 1. Typos happen. With phone numbers, that can get expensive. I've been thinking about this, and wrote a tutorial. THREAD
 
@@ -181,7 +181,7 @@ _Public domain <https://commons.wikimedia.org/wiki/File:Inside_Suite.jpg>_
 
 ## Call for Papers
 
-I generally turn magazine articles into conference talks (and not the other way around). This one
+I generally turn my magazine articles into conference talks (and not the other way around). This proposed tutorial
 is suitable as both a regular talk and a hands-on workshop. In the workshop (3 hours) we can take
 on both validate (Number Insights API) and verify (Verify API and workflow) phone numbers.
 
@@ -198,7 +198,7 @@ on both validate (Number Insights API) and verify (Verify API and workflow) phon
 I generally pick from one of several potential descriptions when submitting to a CFP. Since most conferences
 that I've submitted to request multiple submissions, I try to make each _set_ of submissions as
 much of a variety as possible. I can never predict what gets chosen by the organizers, and feedback
-indicates that it's a matter of filling in pieces of the puzzle in relationship to other
+indicates that it's a matter of filling in pieces of the puzzle in relation to other
 speakers' talks.
 
 The following descriptions assume submission is to a PHP-centric conference and thus there is no
